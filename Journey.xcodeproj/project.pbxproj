@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B725DDAE1EFDC56900A3A2E1 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725DDAD1EFDC56900A3A2E1 /* MainPage.swift */; };
-		B725DDB01EFE234100A3A2E1 /* Continents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725DDAF1EFE234100A3A2E1 /* Continents.swift */; };
+		B768D3671F0899F200862114 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B768D3661F0899F200862114 /* QuartzCore.framework */; };
+		B76E582C1F17150500274E8E /* NAStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E582B1F17150500274E8E /* NAStates.swift */; };
 		B7BFB0F21EF353A500FF2453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BFB0F11EF353A500FF2453 /* AppDelegate.swift */; };
 		B7BFB0F41EF353A500FF2453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BFB0F31EF353A500FF2453 /* ViewController.swift */; };
 		B7BFB0F71EF353A500FF2453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BFB0F51EF353A500FF2453 /* Main.storyboard */; };
@@ -16,6 +17,12 @@
 		B7BFB0FC1EF353A500FF2453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BFB0FA1EF353A500FF2453 /* LaunchScreen.storyboard */; };
 		B7BFB1071EF353A500FF2453 /* JourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BFB1061EF353A500FF2453 /* JourneyTests.swift */; };
 		B7BFB1161EF3572100FF2453 /* AtlantaImages in Resources */ = {isa = PBXBuildFile; fileRef = B7BFB1151EF3572100FF2453 /* AtlantaImages */; };
+		B7C443021F1D9CD400FBB0A6 /* ContinentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443011F1D9CD400FBB0A6 /* ContinentCollectionView.swift */; };
+		B7C443041F1DB04B00FBB0A6 /* NorthAmericaCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443031F1DB04B00FBB0A6 /* NorthAmericaCollectionView.swift */; };
+		B7C4430F1F1DBDD200FBB0A6 /* GeorgiaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4430E1F1DBDD200FBB0A6 /* GeorgiaData.swift */; };
+		B7C443111F1DBE4A00FBB0A6 /* GeorgiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443101F1DBE4A00FBB0A6 /* GeorgiaViewController.swift */; };
+		B7C443131F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443121F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift */; };
+		B7C443151F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443141F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,8 @@
 
 /* Begin PBXFileReference section */
 		B725DDAD1EFDC56900A3A2E1 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
-		B725DDAF1EFE234100A3A2E1 /* Continents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Continents.swift; sourceTree = "<group>"; };
+		B768D3661F0899F200862114 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B76E582B1F17150500274E8E /* NAStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NAStates.swift; path = ../NAStates.swift; sourceTree = "<group>"; };
 		B7BFB0EE1EF353A500FF2453 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BFB0F11EF353A500FF2453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7BFB0F31EF353A500FF2453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +50,12 @@
 		B7BFB1061EF353A500FF2453 /* JourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyTests.swift; sourceTree = "<group>"; };
 		B7BFB1081EF353A500FF2453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7BFB1151EF3572100FF2453 /* AtlantaImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AtlantaImages; path = ../../AtlantaImages; sourceTree = "<group>"; };
+		B7C443011F1D9CD400FBB0A6 /* ContinentCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentCollectionView.swift; sourceTree = "<group>"; };
+		B7C443031F1DB04B00FBB0A6 /* NorthAmericaCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthAmericaCollectionView.swift; sourceTree = "<group>"; };
+		B7C4430E1F1DBDD200FBB0A6 /* GeorgiaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeorgiaData.swift; sourceTree = "<group>"; };
+		B7C443101F1DBE4A00FBB0A6 /* GeorgiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeorgiaViewController.swift; sourceTree = "<group>"; };
+		B7C443121F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeorgiaSectionHeader.swift; sourceTree = "<group>"; };
+		B7C443141F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeorgiaPhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B768D3671F0899F200862114 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B768D3651F0899F200862114 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B768D3661F0899F200862114 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7BFB0E51EF353A500FF2453 = {
 			isa = PBXGroup;
 			children = (
 				B7BFB0F01EF353A500FF2453 /* Journey */,
 				B7BFB1051EF353A500FF2453 /* JourneyTests */,
 				B7BFB0EF1EF353A500FF2453 /* Products */,
+				B768D3651F0899F200862114 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +111,10 @@
 				B7BFB0F11EF353A500FF2453 /* AppDelegate.swift */,
 				B7BFB0F31EF353A500FF2453 /* ViewController.swift */,
 				B7BFB0F51EF353A500FF2453 /* Main.storyboard */,
-				B725DDAF1EFE234100A3A2E1 /* Continents.swift */,
+				B7C443161F1DBE7D00FBB0A6 /* Georgia */,
+				B7C443011F1D9CD400FBB0A6 /* ContinentCollectionView.swift */,
+				B7C443031F1DB04B00FBB0A6 /* NorthAmericaCollectionView.swift */,
+				B76E582B1F17150500274E8E /* NAStates.swift */,
 				B725DDAD1EFDC56900A3A2E1 /* MainPage.swift */,
 				B7BFB0F81EF353A500FF2453 /* Assets.xcassets */,
 				B7BFB0FA1EF353A500FF2453 /* LaunchScreen.storyboard */,
@@ -103,6 +130,17 @@
 				B7BFB1081EF353A500FF2453 /* Info.plist */,
 			);
 			path = JourneyTests;
+			sourceTree = "<group>";
+		};
+		B7C443161F1DBE7D00FBB0A6 /* Georgia */ = {
+			isa = PBXGroup;
+			children = (
+				B7C4430E1F1DBDD200FBB0A6 /* GeorgiaData.swift */,
+				B7C443101F1DBE4A00FBB0A6 /* GeorgiaViewController.swift */,
+				B7C443121F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift */,
+				B7C443141F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift */,
+			);
+			name = Georgia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +249,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B725DDB01EFE234100A3A2E1 /* Continents.swift in Sources */,
 				B7BFB0F41EF353A500FF2453 /* ViewController.swift in Sources */,
+				B7C4430F1F1DBDD200FBB0A6 /* GeorgiaData.swift in Sources */,
+				B76E582C1F17150500274E8E /* NAStates.swift in Sources */,
+				B7C443111F1DBE4A00FBB0A6 /* GeorgiaViewController.swift in Sources */,
+				B7C443041F1DB04B00FBB0A6 /* NorthAmericaCollectionView.swift in Sources */,
 				B7BFB0F21EF353A500FF2453 /* AppDelegate.swift in Sources */,
+				B7C443131F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift in Sources */,
+				B7C443151F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift in Sources */,
+				B7C443021F1D9CD400FBB0A6 /* ContinentCollectionView.swift in Sources */,
 				B725DDAE1EFDC56900A3A2E1 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
