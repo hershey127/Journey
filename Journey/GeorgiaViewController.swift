@@ -11,6 +11,7 @@ import UIKit
 class GeorgiaViewController: UICollectionViewController {
     
     var photoCategories: [GeorgiaCategory] = GeorgiaLibrary.fetchPhotos()
+    var globalID: Int = 0
     
     struct Storyboard{
         static let leftAndRightPaddings: CGFloat = 2.0
@@ -55,12 +56,9 @@ class GeorgiaViewController: UICollectionViewController {
         let Button = cell.viewWithTag(1) as? UIButton
         
         if(Button != nil){
-            Button!.tag = indexPath.row
+            Button!.tag = globalID
+            globalID = globalID + 1
         }
-        
-
-        
-        
         
         return cell
     }

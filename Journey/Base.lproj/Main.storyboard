@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -140,72 +139,10 @@
             </objects>
             <point key="canvasLocation" x="2769" y="-27"/>
         </scene>
-        <!--MainPage-->
-        <scene sceneID="Mcx-0s-O2W">
-            <objects>
-                <viewController title="MainPage" id="kpS-h9-P9O" customClass="MainPage" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SBn-WK-B7L"/>
-                        <viewControllerLayoutGuide type="bottom" id="JPX-oD-UK8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lQQ-2E-6ep">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9It-Jh-nrm">
-                                <rect key="frame" x="16" y="90" width="343" height="265"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="KQe-Vi-Zf2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="50"/>
-                                <state key="normal" title="Journeys">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="JQM-cE-Cms" kind="show" id="3fw-UT-7jU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEr-eZ-2FT">
-                                <rect key="frame" x="16" y="370" width="168" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
-                                <state key="normal" title="Feutured Trips">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S9-5l-fkX">
-                                <rect key="frame" x="191" y="370" width="168" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
-                                <state key="normal" title="My Trips">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="9It-Jh-nrm" firstAttribute="top" secondItem="SBn-WK-B7L" secondAttribute="bottom" constant="26" id="1ey-3B-LNH"/>
-                            <constraint firstItem="9It-Jh-nrm" firstAttribute="leading" secondItem="lQQ-2E-6ep" secondAttribute="leadingMargin" id="8F2-s0-uJi"/>
-                            <constraint firstItem="9It-Jh-nrm" firstAttribute="trailing" secondItem="lQQ-2E-6ep" secondAttribute="trailingMargin" id="LGq-dM-SCY"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Main Menu" id="1Sq-jE-Mhu"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                    <connections>
-                        <outlet property="feuturedTripsButton" destination="eEr-eZ-2FT" id="tNY-26-17m"/>
-                        <outlet property="journeysButton" destination="9It-Jh-nrm" id="xRJ-aZ-Zk4"/>
-                        <outlet property="myTripsButton" destination="6S9-5l-fkX" id="nMd-8e-fp7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="He5-qu-82Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="786" y="683"/>
-        </scene>
         <!--Continent Collection View-->
         <scene sceneID="tYX-Bb-kmX">
             <objects>
-                <collectionViewController id="JQM-cE-Cms" customClass="ContinentCollectionView" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="Continents" id="JQM-cE-Cms" customClass="ContinentCollectionView" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="vaG-88-DqW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,6 +199,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBM-sk-kPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030.95703125" y="682.79648609077594"/>
+        </scene>
+        <!--Main Page-->
+        <scene sceneID="Whm-Ye-5Xt">
+            <objects>
+                <collectionViewController id="IKk-lM-Th3" customClass="MainPageCollection" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qUX-AK-uDY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="aOJ-yK-y51">
+                            <size key="itemSize" width="170" height="170"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="80" maxX="0.0" maxY="30"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ci9-5a-SpQ">
+                                <rect key="frame" x="0.0" y="80" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKo-hH-sVO">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                            <state key="normal" backgroundImage="Australia"/>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="IKk-lM-Th3" eventType="touchUpInside" id="XpP-Dj-v5n"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1M-wu-Bcv">
+                                            <rect key="frame" x="0.0" y="149" width="170" height="21"/>
+                                            <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.63300107760000002" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="FKo-hH-sVO" firstAttribute="top" secondItem="ci9-5a-SpQ" secondAttribute="top" id="Cws-G0-D2Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="FKo-hH-sVO" secondAttribute="bottom" id="H7a-fh-Dud"/>
+                                    <constraint firstAttribute="trailing" secondItem="FKo-hH-sVO" secondAttribute="trailing" id="Kmu-W7-UqK"/>
+                                    <constraint firstItem="FKo-hH-sVO" firstAttribute="leading" secondItem="ci9-5a-SpQ" secondAttribute="leading" id="MjM-66-eLe"/>
+                                    <constraint firstAttribute="bottom" secondItem="r1M-wu-Bcv" secondAttribute="bottom" id="Rnx-M5-Y2m"/>
+                                    <constraint firstItem="r1M-wu-Bcv" firstAttribute="leading" secondItem="ci9-5a-SpQ" secondAttribute="leading" id="h3g-Ap-YhS"/>
+                                    <constraint firstAttribute="trailing" secondItem="r1M-wu-Bcv" secondAttribute="trailing" id="ns6-g8-kPq"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="IKk-lM-Th3" id="i5p-CM-7WV"/>
+                            <outlet property="delegate" destination="IKk-lM-Th3" id="bdJ-oi-yfV"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Main Page" id="oNQ-kr-g0e"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56M-qE-RZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="683"/>
         </scene>
         <!--North America Collection View-->
         <scene sceneID="Oxv-NJ-nYg">
@@ -484,7 +483,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="kpS-h9-P9O" kind="relationship" relationship="rootViewController" id="VUa-HZ-GS6"/>
+                        <segue destination="IKk-lM-Th3" kind="relationship" relationship="rootViewController" id="E4h-bS-sbf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5B-ez-e3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -493,6 +492,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Australia" width="240" height="80"/>
         <image name="map" width="633" height="392"/>
     </resources>
 </document>

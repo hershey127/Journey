@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B725DDAE1EFDC56900A3A2E1 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725DDAD1EFDC56900A3A2E1 /* MainPage.swift */; };
 		B768D3671F0899F200862114 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B768D3661F0899F200862114 /* QuartzCore.framework */; };
 		B76E582C1F17150500274E8E /* NAStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E582B1F17150500274E8E /* NAStates.swift */; };
 		B7BFB0F21EF353A500FF2453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BFB0F11EF353A500FF2453 /* AppDelegate.swift */; };
@@ -23,6 +22,7 @@
 		B7C443111F1DBE4A00FBB0A6 /* GeorgiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443101F1DBE4A00FBB0A6 /* GeorgiaViewController.swift */; };
 		B7C443131F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443121F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift */; };
 		B7C443151F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C443141F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift */; };
+		B7E6B5211F1ED0F700296682 /* MainPageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E6B5201F1ED0F700296682 /* MainPageCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B725DDAD1EFDC56900A3A2E1 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		B768D3661F0899F200862114 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B76E582B1F17150500274E8E /* NAStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NAStates.swift; path = ../NAStates.swift; sourceTree = "<group>"; };
 		B7BFB0EE1EF353A500FF2453 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +55,7 @@
 		B7C443101F1DBE4A00FBB0A6 /* GeorgiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeorgiaViewController.swift; sourceTree = "<group>"; };
 		B7C443121F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeorgiaSectionHeader.swift; sourceTree = "<group>"; };
 		B7C443141F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeorgiaPhotoCell.swift; sourceTree = "<group>"; };
+		B7E6B5201F1ED0F700296682 /* MainPageCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +111,11 @@
 				B7BFB0F11EF353A500FF2453 /* AppDelegate.swift */,
 				B7BFB0F31EF353A500FF2453 /* ViewController.swift */,
 				B7BFB0F51EF353A500FF2453 /* Main.storyboard */,
+				B7E6B5201F1ED0F700296682 /* MainPageCollection.swift */,
 				B7C443161F1DBE7D00FBB0A6 /* Georgia */,
 				B7C443011F1D9CD400FBB0A6 /* ContinentCollectionView.swift */,
 				B7C443031F1DB04B00FBB0A6 /* NorthAmericaCollectionView.swift */,
 				B76E582B1F17150500274E8E /* NAStates.swift */,
-				B725DDAD1EFDC56900A3A2E1 /* MainPage.swift */,
 				B7BFB0F81EF353A500FF2453 /* Assets.xcassets */,
 				B7BFB0FA1EF353A500FF2453 /* LaunchScreen.storyboard */,
 				B7BFB0FD1EF353A500FF2453 /* Info.plist */,
@@ -255,10 +255,10 @@
 				B7C443111F1DBE4A00FBB0A6 /* GeorgiaViewController.swift in Sources */,
 				B7C443041F1DB04B00FBB0A6 /* NorthAmericaCollectionView.swift in Sources */,
 				B7BFB0F21EF353A500FF2453 /* AppDelegate.swift in Sources */,
+				B7E6B5211F1ED0F700296682 /* MainPageCollection.swift in Sources */,
 				B7C443131F1DBE5E00FBB0A6 /* GeorgiaSectionHeader.swift in Sources */,
 				B7C443151F1DBE6F00FBB0A6 /* GeorgiaPhotoCell.swift in Sources */,
 				B7C443021F1D9CD400FBB0A6 /* ContinentCollectionView.swift in Sources */,
-				B725DDAE1EFDC56900A3A2E1 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,54 +1,48 @@
 //
-//  NorthAmericaCollectionView.swift
+//  MainPageCollection.swift
 //  Journey
 //
-//  Created by Harshitha Tadinada on 7/17/17.
+//  Created by Harshitha Tadinada on 7/18/17.
 //  Copyright © 2017 UGA. All rights reserved.
 //
 
 import UIKit
 
-class NorthAmericaCollectionView: UICollectionViewController {
+class MainPageCollection: UICollectionViewController {
     
-    var regionName = [String]()
-    var regionImage = [UIImage]()
+    var name = [String]()
+    var image = [UIImage]()
     
     struct Storyboard{
         static let leftAndRightPaddings: CGFloat = 2.0
-        static let numberOfItemsPerRow: CGFloat = 1.0
-        static let numberOfTotalItems: CGFloat = 3.0
+        static let numberOfItemsPerRow: CGFloat = 2.0
     }
-
     
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        //Declaring Arrays
-        regionImage = [UIImage(named: "UnitedStates.png")!, UIImage(named: "Canada.png")!, UIImage(named: "Mexico.png")!]
-        regionName = ["United States", "Canada", "Mexico"]
+        //Declaring the arrays
+        name = ["Journey", "Featured Journeys", "My Journeys","My Account"]
         
         //Setting the layout of the collection
         let collectionViewWidth = collectionView?.frame.width
-       //let collectionViewHeight = collectionView?.frame.height
         
         let itemWidth = (collectionViewWidth! - Storyboard.leftAndRightPaddings)/Storyboard.numberOfItemsPerRow
-       // let itemHeight = (collectionViewHeight!)/Storyboard.numberOfTotalItems
         
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: itemWidth, height: 119.0)
+        layout.itemSize = CGSize(width: itemWidth, height: itemWidth)
         
-        // Setting the navigation Title
-        self.navigationItem.title = "North America"
+        // Setting navigation Title
+        self.navigationItem.title = "Main Page"
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return regionName.count
+        return name.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as UICollectionViewCell
         
-        //ADD A GUARD STATMENT TO AVOID FORCE UNWRAPPING
         let Button = cell.viewWithTag(1) as? UIButton
         let Label = cell.viewWithTag(2) as? UILabel
         
@@ -56,11 +50,10 @@ class NorthAmericaCollectionView: UICollectionViewController {
             Button!.layer.cornerRadius = 9
             Button!.layer.masksToBounds = true
             
-            Label!.text = regionName[indexPath.row]
-            Button!.setBackgroundImage(self.regionImage[indexPath.row], for: UIControlState.normal)
+            Label!.text = name[indexPath.row]
+           // Button!.setBackgroundImage(self.image[indexPath.row], for: UIControlState.normal)
             Button!.tag = indexPath.row
         }
-
         
         return cell
     }
@@ -68,10 +61,13 @@ class NorthAmericaCollectionView: UICollectionViewController {
     @IBAction func buttonClicked(_ sender: UIButton) {
         let selectedImage = sender.tag
         if (selectedImage == 0){
-            let vc = storyboard?.instantiateViewController(withIdentifier: "NAStates") as! NAStates
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Continents") as! ContinentCollectionView
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
     }
+    
+    
     
 }
 
