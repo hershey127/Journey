@@ -76,7 +76,7 @@ class GeorgiaLibrary{
     private class func generateLabelNames(startIndex: Int, endIndex: Int) -> [String]{
         var allLabels = [String]()
         var imageLabels = [String]()
-        allLabels = ["cat", "dog", "donkey", "bird", "sofa", "couch", "log", "frog", "pink", "blue", "green", "journey", "later", "rosegold", "gold", "lava", "volcano", "pillow", "one", "two", "three", "four", "five", "six"]
+        allLabels = ["Atlanta", "Athens", "donkey", "bird", "sofa", "couch", "log", "frog", "pink", "blue", "green", "journey", "later", "rosegold", "gold", "lava", "volcano", "pillow", "one", "two", "three", "four", "five", "six"]
         
         if(endIndex<allLabels.count){
             for i in startIndex...endIndex{

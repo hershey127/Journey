@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+import MapKit
+import CoreLocation
+    
 class ViewController: UIViewController {
     
     
@@ -15,14 +17,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var scroller: UIScrollView!
     @IBOutlet weak var atlantaView: UIView!
     @IBOutlet weak var atlantaPics_ImageView: UIImageView!
-    @IBOutlet weak var Itenerary: UILabel!
-    @IBOutlet weak var Atlanta_2Day: UILabel!
-    @IBOutlet weak var map: UIImageView!
-    @IBOutlet weak var listedItenerary: UILabel!
+    @IBOutlet weak var map: MKMapView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Locations Marks on Maps
+        let location = CLLocationCoordinate2DMake(33.74718045, -84.38049316)
+        let span = MKCoordinateSpanMake(0.2, 0.2)
+        let region = MKCoordinateRegionMake(location, span)
+        map.setRegion(region, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Atlanta"
+        
+        map.addAnnotation(annotation)
         
         // Creating an array for animation of slide show
         atlantaPics_ImageView.animationImages = [
@@ -35,7 +46,7 @@ class ViewController: UIViewController {
         atlantaPics_ImageView.animationDuration = 10
         atlantaPics_ImageView.startAnimating()
         
-        
+        self.navigationItem.title = "Atlanta"
 
     }
 }
